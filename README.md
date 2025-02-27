@@ -41,6 +41,31 @@ OPENAI_API_KEY=your_openai_api_key_here
 pnpm dev
 ```
 
+## 🐳 Docker
+
+This project includes Docker support for easy deployment and consistent environments.
+
+### Building the Docker Image
+
+```bash
+docker build -t my-brain-agent .
+```
+
+### Running the Docker Container
+
+```bash
+docker run -p 3000:3000 --env-file .env my-brain-agent
+```
+
+The Dockerfile uses:
+- Node.js 23 for modern JavaScript support
+- pnpm for efficient dependency management
+- Proper layer caching to optimize build times
+- Automatic data directory creation for SQLite storage
+
+This containerized setup ensures your brain agent runs in a consistent environment regardless of the host system.
+
+
 ## 📚 Documentation
 
 For more information about Brain Framework, check out the official documentation:
