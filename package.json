@@ -18,9 +18,9 @@
 		"tsx": "^4.7.1"
 	},
 	"dependencies": {
-		"@iqai/adapter-sqlite": "0.1.0",
+		"@elizaos/adapter-sqlite": "github:elizaos-plugins/adapter-sqlite",
 		"@elizaos/client-direct": "0.25.9",
-		"@iqai/agent": "^0.1.0",
+		"@iqai/agent": "^0.2.0",
 		"dotenv": "^16.4.7",
 		"sharp": "^0.33.5"
 	},

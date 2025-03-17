@@ -1,5 +1,5 @@
+import SqliteAdapter from "@elizaos/adapter-sqlite";
 import DirectClient from "@elizaos/client-direct";
-import { SqliteDatabaseAdapter } from "@iqai/adapter-sqlite";
 import { AgentBuilder, ModelProviderName } from "@iqai/agent";
 import dotenv from "dotenv";
 
@@ -9,12 +9,10 @@ dotenv.config();
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY as string;
 
 async function main() {
-	const databaseAdapter = new SqliteDatabaseAdapter();
-
 	// Create your agent with basic configuration
 	const agent = new AgentBuilder()
 		.withModelProvider(ModelProviderName.OPENAI, OPENAI_API_KEY)
-		.withDatabase(databaseAdapter)
+		.withDatabase(SqliteAdapter)
 		.withClient(DirectClient)
 		.build();
 
