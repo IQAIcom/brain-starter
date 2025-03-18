@@ -5,6 +5,7 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
+		"postinstall": "node-gyp rebuild --directory=node_modules/.pnpm/better-sqlite3@11.8.1/node_modules/better-sqlite3",
 		"start": "tsx src/index.ts",
 		"dev": "tsx watch src/index.ts",
 		"check-types": "tsc --noEmit"
@@ -13,16 +14,15 @@
 	"license": "ISC",
 	"description": "",
 	"devDependencies": {
-		"@types/better-sqlite3": "^7.6.12",
-		"typescript": "^5.8.2",
-		"tsx": "^4.7.1"
+		"node-gyp": "^11.1.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.8.2"
 	},
 	"dependencies": {
 		"@elizaos/adapter-sqlite": "github:elizaos-plugins/adapter-sqlite",
 		"@elizaos/client-direct": "0.25.9",
 		"@iqai/agent": "^0.2.0",
-		"dotenv": "^16.4.7",
-		"sharp": "^0.33.5"
+		"dotenv": "^16.4.7"
 	},
 	"engines": {
 		"node": "22.x"
