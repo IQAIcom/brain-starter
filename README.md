@@ -11,15 +11,15 @@ This repository contains everything you need to get started with Brain Framework
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/my-brain-agent.git
-cd my-brain-agent
+git clone https://github.com/IQAIcom/brain-starter
+cd brain-starter
 pnpm install
 ```
 
 ## 📋 Project Structure
 
 ```
-my-brain-agent/
+brain-starter/
 ├── src/           # Source code
 ├── data/          # Data storage for your agent
 ├── .env           # Environment variables
