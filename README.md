@@ -48,17 +48,17 @@ This project includes Docker support for easy deployment and consistent environm
 ### Building the Docker Image
 
 ```bash
-docker build -t my-brain-agent .
+docker build -t brain-starter .
 ```
 
 ### Running the Docker Container
 
 ```bash
-docker run -p 3000:3000 --env-file .env my-brain-agent
+docker run -p 3000:3000 --env-file .env brain-starter
 ```
 
 The Dockerfile uses:
-- Node.js 23 for modern JavaScript support
+- Node.js 22 for modern JavaScript support
 - pnpm for efficient dependency management
 - Proper layer caching to optimize build times
 - Automatic data directory creation for SQLite storage
