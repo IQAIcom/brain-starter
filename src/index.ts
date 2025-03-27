@@ -19,7 +19,7 @@ async function main() {
 		const heartbeatPlugin = await createHeartbeatPlugin([
 			{
 				period: "*/30 * * * * *",  // Every 30 seconds
-				input: "Use sequencer to buy 10 IQ from the top agent.",
+				input: "Use sequencer to buy 10 IQ from the top Agent.",
 				clients: [
 					{
 						type: "callback",
