@@ -14,7 +14,7 @@ RUN npm install -g pnpm
 
 # Copy package files and install dependencies
 COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --no-optional
+RUN pnpm install
 
 # Copy project files
 COPY src/ ./src/
